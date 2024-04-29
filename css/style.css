@@ -1,0 +1,62 @@
+
+body{
+    background: linear-gradient(#8c00c4, #c67dd8) no-repeat;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+h3{
+    text-align: center;
+    font-weight: bold;
+}
+#mensagem-output{
+    text-transform: uppercase;
+    text-align: center;
+}
+.line{
+    border-bottom: 2px solid rgba(211, 211, 211, 0.5);
+}
+.container-input button{
+    border-radius: 5px 0 0 5px;
+    width: fit-content;
+    cursor: pointer;
+    padding: 8px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+.container-input button:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.message{
+    border: 1px solid lightgrey;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    height: auto;
+    width: 500px;
+    margin: auto;
+    padding-left: o 20px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+.message input{
+    width: 90%;
+    padding: 8px 0;
+    border: 1px solid lightgray;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    
+}
+
+@media screen and (max-width:600px){
+    .message{
+        width: 250px;
+    }
+    .message input{
+        width: 75%;
+    }
+}
